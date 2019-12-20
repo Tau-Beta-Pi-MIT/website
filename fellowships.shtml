@@ -19,11 +19,11 @@
           <!-- BLURB IN p tags -->
           <h2>TBP Service and Engineering Fellowships</h2>
           <p class='first text'>
-          TBP is looking to sponsor students wishing to pursue a service engineering project during Summer 2017. Successful fellows should be prepared to guide a student-led project that to applies their engineering and technological understanding to better society, both domestic and abroad, and can leave behind lasting, sustainable benefits for a community. The work may be arranged with non-governmental or intergovernmental organizations and other community-conscious groups. Students of all disciplines are welcome.</p>
-        <h5><a href='#application' target='new'>Apply now</a> for the Summer 2017 Service and Engineering Fellowships</h5>
+          TBP will sponsor students wishing to pursue a service engineering project during IAP 2020. Successful fellows should be prepared to guide a student-led project that to applies their engineering and technological understanding to better society, both domestic and abroad, and can leave behind lasting, sustainable benefits for a community. The work may be arranged with non-governmental or intergovernmental organizations and other community-conscious groups. Students of all disciplines are welcome.</p>
+        <h5><a href='#application' target='new'>Apply now</a> for the 2020 IAP Fellowship</h5>
         <!-- <h5>Applications for the Summer 2017 Service and Engineering Fellowships are now closed. View the winners <a href='#pastwinners'>here</a></h5> -->
           <p class='text'>
-          This summer, we are looking to award as many as five fellowships of up to $5,000 each. Applications are due on <em>Sunday, April 23 at noon</em>.
+          This IAP, we intend to award as many as five fellowships of up to $3000 each. The application package is due on <em>Sunday, November 3rd at noon EST</em> for priority decisions. Applications received before <em>Sunday, November 10th at noon EST</em> will be reviewed on a rolling basis.
           <p class='text'>
             For further information, please contact <a href='mailto:tbp-fellowships@mit.edu'>tbp-fellowships@mit.edu</a>
           </p>
@@ -32,9 +32,9 @@
           <!-- <a href='includes/fellowships/ServiceEngineeringSummer2013.pdf' target='new' class='button normal download'>Download Application<span class='right-arrow'></span></a> -->
         </li>
         <li id="applicationTab">
-          <h2>Service/Engineering Summer 2017 Fellowship Application</h2>
+          <h2>Service/Engineering IAP 2020 Fellowship Application</h2>
           <p class='first text'>
-            TBP is looking to sponsor students wishing to pursue a service engineering project this coming Summer.
+            TBP is looking to sponsor students wishing to pursue a service engineering project this coming IAP.
             The purpose of this program is to support students who seek to apply their engineering and technological 
             understanding to better society, both domestic and abroad. Successful fellows should be prepared to guide a 
             student-led project that can leave behind lasting, sustainable benefits for a community. The work may be 
@@ -42,10 +42,10 @@
             Students of all disciplines are welcome.</p>
           <h3>Application Checklist</h3>
           <!-- <p>Applications for these fellowships are now closed.</p>  -->
-            <p>The TBP Fellowships has several components. Please make sure that all of the following are completed by <em>Sunday, April 23 at noon</em> to be considered.</p>
+            <p>The TBP Fellowship application has several components. To be considered, please make sure that all of the following are complete. The application package is due on Sunday, November 3rd at noon EST for priority decisions. Applications received before Sunday, November 10th at noon EST will be reviewed on a rolling basis.</p>
             <ul>
-              <li>Complete the online form <a href='https://docs.google.com/forms/d/e/1FAIpQLSeDwADtuNQVFlXMRBAnWaU1KaHlxiby8frF89D9IlMfuCFsLw/viewform'>here</a> (See Abstract and Safety Statement Guidelines below)</li>
-              <li>Email the following to <a href='mailto:tbp-fellowships@mit.edu' target='new'>tbp-fellowships@mit.edu</a>:</li>
+              <li>Complete the online form <a href='https://docs.google.com/forms/d/e/1FAIpQLSfdk6u8_Lt_UZcOK5FgOFuUe80Jowh-w2SWj1YQV0XAS6hmQA/viewform?usp=sf_link'>here</a> (See Abstract and Safety Statement Guidelines below)</li>
+              <li>Please submit the following to <a href='https://www.dropbox.com/request/jHJrkv7m3oTnLP5bM3wn'>this Dropbox Link</a></li>
               <ul>
                 <li>Project proposal: See Proposal Guidelines below.</li>
                 <li>Proposed budget: See Budget Guidelines below.</li>
@@ -70,7 +70,7 @@
             <ul>
               <li>Project Title
               <li>Name(s) of Applicants</li>
-              <li>Term (i.e. Summer 2017)</li>
+              <li>Term (i.e. IAP 2020)</li>
             </ul>
 
             <h4>Project abstract</h4>
@@ -84,7 +84,7 @@
             <p>Outline the technical details of your project, with a focus on the goals you wish to achieve, the specific roles that you will play (experimentation, implementation, etc.), and how success will be evaluated. Include any figures and diagrams that may help us visualize your project. Also elaborate on additional safety precautions that will be taken in addition to those mentioned in your safety statement part of the Google Form, if necessary (especially if working in a region under travel warning).</p>
 
             <h4>Proposed Timeline</h4>
-            <p>Please indicate, in as much detail as possible, a work plan for your project. Include any preparations done on campus, a breakdown of your time working on the project milestones (over the summer or IAP) and mention any continuation afterwards, if applicable.</p>
+            <p>Please indicate, in as much detail as possible, a work plan for your project. Include any preparations done on campus, a breakdown of your time working on the project milestones (over the fall and IAP) and mention any continuation afterwards, if applicable.</p>
 
             <h4>Qualifications</h4>
             <p>Describe the qualifications (skills, courses taken, language fluency, etc.) that each applicant has to successfully complete this project. If working on a team, explain any previous teamwork experience related to the project.</p>
@@ -98,7 +98,7 @@
               <li>Each item (i.e. plane tickets, housing, transportation, food) along with its unit and total cost</li>
               <li>Other confirmed funding sources (i.e. PSC, Baker Foundation, etc.)</li>
               <li>Other funding sources applied for (i.e. PSC, Baker Foundation, etc.)</li>
-              <li>Total amount requested from TBP (Maximum: $5000 for Summer fellowships)</li>
+              <li>Total amount requested from TBP (Maximum: $3000 for IAP fellowships)</li>
             </ul>
             <br>
             <p>Our fellowships are intended primarily for living and travel expenses, and please notify us as soon as possible if you receive additional funding from other sources.</p>
@@ -110,7 +110,7 @@
           <h3>Requirements</h3>
             <p>Should your application be successful and you are awarded a fellowship, you will be notified by email and set up with the Student Activities Office for travel and financial matters. The TBP Service &amp; Engineering Fellowship Program also has the following requirements:</p>
             <ul>
-              <li>All aspects of the project requiring funding must be completed by the end of Summer 2017.</li>
+              <li>All aspects of the project requiring funding must be completed by the end of IAP 2020.</li>
               <li>Each fellow must submit a slideshow that includes the major results of his/her work and multiple pictures of the project upon completion.</li>
               <li>Each fellow must be prepared to present his/her accomplishments at the Tau Beta Pi Fellowship Forum (at MIT, date to be announced).</li>
               <li>Relevant receipts/proofs of payment totaling the awarded sum must be submitted within 2 weeks of project completion.</li>
@@ -132,7 +132,7 @@
         <li id="pastwinnersTab">
           <!-- LIST OF PAST WINNERS -->
           <h2>Past Winners</h2>
-          <!--#include virtual="includes/fellowships/winners/2014SummerEngineering.htm"-->
+          <!--#include virtual="includes/fellowships/winners/2014SummerEngineering.htm"--> 
           <!--#include virtual="includes/fellowships/winners/2014IAP.htm"-->
           <!--#include virtual="includes/fellowships/winners/2013SummerEngineering.htm"-->
           <!--#include virtual="includes/fellowships/winners/2013SpringPhilanthropic.htm"-->
