@@ -1,6 +1,3 @@
-ssi-server
-==========
-
 Server Side Includes in Python's SimpleHTTPServer
 
 Use this in the same way as Python's SimpleHTTPServer:
