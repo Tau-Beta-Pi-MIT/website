@@ -9,7 +9,7 @@
     <div class='row'>
         <p class='first text'>
             Our members and eligibles are rooted in service, and recognize the value of engaging with the greater Boston
-            community through a variety of different service events. Past events have included:
+            community through a variety of different service events. Past service events organized by our members and eligibles have included:
         <ol class='section'>
             <li>
                 Habitat for Humanity
@@ -37,7 +37,6 @@
         </p>
     </div>
 </div>
-
 
 <!--#include virtual="includes/footer.htm"-->
 <!--#include virtual="includes/bottom.htm"-->
