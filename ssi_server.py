@@ -14,6 +14,7 @@ Run ./ssi_server.py in this directory and visit localhost:8000 for an exmaple.
 
 import os
 import ssi
+
 try:
     # This works for Python 2
     from SimpleHTTPServer import SimpleHTTPRequestHandler
@@ -26,56 +27,56 @@ import tempfile
 
 
 class SSIRequestHandler(SimpleHTTPRequestHandler):
-  """Adds minimal support for <!-- #include --> directives.
-  
-  The key bit is translate_path, which intercepts requests and serves them
-  using a temporary file which inlines the #includes.
-  """
+    """Adds minimal support for <!-- #include --> directives.
 
-  def __init__(self, request, client_address, server):
-    self.temp_files = []
-    SimpleHTTPRequestHandler.__init__(self, request, client_address, server)
+    The key bit is translate_path, which intercepts requests and serves them
+    using a temporary file which inlines the #includes.
+    """
 
-  def do_GET(self):
-    SimpleHTTPRequestHandler.do_GET(self)
-    self.delete_temp_files()
+    def __init__(self, request, client_address, server):
+        self.temp_files = []
+        SimpleHTTPRequestHandler.__init__(self, request, client_address, server)
 
-  def do_HEAD(self):
-    SimpleHTTPRequestHandler.do_HEAD(self)
-    self.delete_temp_files()
+    def do_GET(self):
+        SimpleHTTPRequestHandler.do_GET(self)
+        self.delete_temp_files()
 
-  def translate_path(self, path):
-    fs_path = SimpleHTTPRequestHandler.translate_path(self, path)
-    if self.path.endswith('/'):
-      for index in "index.html", "index.htm", "index.shtml":
-        index = os.path.join(fs_path, index)
-        if os.path.exists(index):
-          fs_path = index
-          break
+    def do_HEAD(self):
+        SimpleHTTPRequestHandler.do_HEAD(self)
+        self.delete_temp_files()
 
-    if (fs_path.endswith('.html') or fs_path.endswith(".shtml")) and os.path.exists(fs_path):
-      content = ssi.InlineIncludes(fs_path, path)
-      fs_path = self.create_temp_file(fs_path, content)
-    return fs_path
+    def translate_path(self, path):
+        fs_path = SimpleHTTPRequestHandler.translate_path(self, path)
+        if self.path.endswith('/'):
+            for index in "index.html", "index.htm", "index.shtml":
+                index = os.path.join(fs_path, index)
+                if os.path.exists(index):
+                    fs_path = index
+                    break
 
-  def delete_temp_files(self):
-    for temp_file in self.temp_files:
-      os.remove(temp_file)
+        if (fs_path.endswith('.html') or fs_path.endswith(".shtml")) and os.path.exists(fs_path):
+            content = ssi.InlineIncludes(fs_path, path)
+            fs_path = self.create_temp_file(fs_path, content)
+        return fs_path
 
-  def create_temp_file(self, original_path, content):
-    _, ext = os.path.splitext(original_path)
-    if ext == ".shtml":
-        ext = ".html"
-    fd, path = tempfile.mkstemp(suffix=ext)
-    try:
-        os.write(fd, content)  # This works for Python 2
-    except TypeError:
-        os.write(fd, bytes(content, 'UTF-8'))  # This works for Python 3
-    os.close(fd)
+    def delete_temp_files(self):
+        for temp_file in self.temp_files:
+            os.remove(temp_file)
 
-    self.temp_files.append(path)
-    return path
+    def create_temp_file(self, original_path, content):
+        _, ext = os.path.splitext(original_path)
+        if ext == ".shtml":
+            ext = ".html"
+        fd, path = tempfile.mkstemp(suffix=ext)
+        try:
+            os.write(fd, content)  # This works for Python 2
+        except TypeError:
+            os.write(fd, bytes(content, 'UTF-8'))  # This works for Python 3
+        os.close(fd)
+
+        self.temp_files.append(path)
+        return path
 
 
 if __name__ == '__main__':
-  SimpleHTTPServer.test(HandlerClass=SSIRequestHandler)
+    SimpleHTTPServer.test(HandlerClass=SSIRequestHandler)

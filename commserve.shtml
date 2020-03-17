@@ -1,7 +1,43 @@
 <!--#include virtual="includes/header.htm"-->
 <!--#include virtual="includes/nav.htm"-->
 
-  <!-- COMMUNITY SERVICE -->
+<!-- COMMUNITY SERVICE -->
+<div class='main'>
+    <div class='row'>
+        <h1 class='dark-header'><em>COMMUNITY SERVICE</em></h1>
+    </div>
+    <div class='row'>
+        <p class='first text'>
+            Our members and eligibles are rooted in service, and recognize the value of engaging with the greater Boston
+            community through a variety of different service events. Past events have included:
+        <ol class='section'>
+            <li>
+                Habitat for Humanity
+            </li>
+            <li>
+                Girls Who Code
+            </li>
+            <li>
+                Challah for Hunger
+            </li>
+            <li>
+                Relay for Life
+            </li>
+            <li>
+                Boston Red Sox Green Team
+            </li>
+            <li>
+                Loaves and Fishes Program
+            </li>
+        </ol>
+        </p>
+        <p>
+            If you have any ideas for service projects or want to get involved with TBP service events, please email us
+            at <a href='mailto:tbp-officers@mit.edu'>tbp-officers@mit.edu</a>.
+        </p>
+    </div>
+</div>
+
 
 <!--#include virtual="includes/footer.htm"-->
 <!--#include virtual="includes/bottom.htm"-->

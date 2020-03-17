@@ -1,7 +1,11 @@
 <!--#include virtual="includes/header.htm"-->
 <!--#include virtual="includes/nav.htm"-->
 
-  <!-- TUTORING -->
+<!-- TUTORING -->
+<div class='main'>
+    <div class='row'>
+      <h1 class='dark-header'><em>TUTORING</em></h1>
+    </div>
 
 <!--#include virtual="includes/footer.htm"-->
 <!--#include virtual="includes/bottom.htm"-->

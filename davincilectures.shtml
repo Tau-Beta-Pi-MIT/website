@@ -1,44 +1,58 @@
 <!--#include virtual="includes/header.htm"-->
 <!--#include virtual="includes/nav.htm"-->
 
-  <!-- DA VINCI DINNERS -->
-  <div class='main'>
+<!-- DA VINCI DINNERS -->
+<div class='main'>
     <div class='row'>
-      <h1 class='dark-header'><em>DA VINCI LECTURES</em></h1>
+        <h1 class='dark-header'><em>DA VINCI LECTURES</em></h1>
     </div>
     <div class='row content'>
-      <dl class="tabs">
-        <dd class="active"><a href="#about">About</a></dd>
-        <dd><a href="#upcominglectures">Upcoming Lectures</a></dd>
-        <dd><a href="#pastlectures">Past Lectures</a></dd>
-      </dl>
-      <ul class="tabs-content">
-        <li class="active" id="aboutTab">
-          <h2>About Da Vinci Lectures</h2>
-          <p class='first text'>As stated in the preamble to our constitution, one of the major goals of Tau Beta Pi, the National Engineering Honor Society, is "to foster a spirit of liberal culture at engineering colleges." Towards this end, the MIT chapter of Tau Beta Pi is pleased to host a series of dinner lectures, the <em>TBP Leonardo da Vinci Dinners</em>. MIT faculty members and TBP students from a wide variety of departments are invited to each dinner to enjoy good food, listen to an interesting presentation on a variety of topics, and engage in hearty conversation in the spirit of Leonardo da Vinci: artist, architect, engineer, scientist, and philosopher. It is our hope that by bringing together people from many different fields we can foster the kind of intellectual diversity and love of knowledge exemplified by Leonardo and representative of Tau Beta Pi. These elegant dinners bring together about <em>twenty TBP members and several faculty members</em>. Each lecture begins at 6:00 PM and lasts approximately two hours. One of the faculty members gives a short presentation which acts as a catalyst for conversation during dinner. The presentations are meant to confront us with relevant issues of <em>science, society, and culture</em>: in short, to foster a spirit of liberal culture here at MIT. Dinner is provided free of charge to all guests.</p>
-        </li>
-        <li id="upcominglecturesTab">
-          <h2>Upcoming Da Vinci Lectures</h2>
-          <!-- <p class='first text'>Stay tuned for our next lecture!</p> -->
-          <p class='first text'>Please let us know if you will be attending: <a href='http://tinyurl.com/MITingenious'>tinyurl.com/MITingenious</a></p>
-          <p class='first text'><img src='davinciposters/jasonfagone.png' /></p>
-        </li>
-        <li id="pastlecturesTab">
-          <h2>Past Da Vinci Lectures</h2>
-          <!-- Each file is a separate table which represents a semester.
-               Semesters are listed in reverse chronological order;
-               Lectures for each semester are listed in chronological order.
-               To add a lecture, follow the instructions in template.htm -->
-          
-          <!--#include virtual="includes/davincilectures/fall2013lectures.htm"-->
-          <!--#include virtual="includes/davincilectures/spring2013lectures.htm"-->
-          <!--#include virtual="includes/davincilectures/fall2012lectures.htm"-->
-          <!--#include virtual="includes/davincilectures/spring2012lectures.htm"-->
-          <!--#include virtual="includes/davincilectures/spring2011lectures.htm"-->
-        </li>
-      </ul>
+        <dl class="tabs">
+            <dd class="active"><a href="#about">About</a></dd>
+            <dd><a href="#upcominglectures">Upcoming Lectures</a></dd>
+            <dd><a href="#pastlectures">Past Lectures</a></dd>
+        </dl>
+        <ul class="tabs-content">
+            <li class="active" id="aboutTab">
+                <h2>About Da Vinci Lectures</h2>
+                <p class='first text'>As stated in the preamble to our constitution, one of the major goals of Tau Beta
+                    Pi, the National Engineering Honor Society, is "to foster a spirit of liberal culture at engineering
+                    colleges." Towards this end, the MIT chapter of Tau Beta Pi is pleased to host a series of dinner
+                    lectures, the <em>TBP Leonardo da Vinci Dinners</em>. MIT faculty members and TBP students from a
+                    wide variety of departments are invited to each dinner to enjoy good food, listen to an interesting
+                    presentation on a variety of topics, and engage in hearty conversation in the spirit of Leonardo da
+                    Vinci: artist, architect, engineer, scientist, and philosopher. It is our hope that by bringing
+                    together people from many different fields we can foster the kind of intellectual diversity and love
+                    of knowledge exemplified by Leonardo and representative of Tau Beta Pi. These elegant dinners bring
+                    together about <em>twenty TBP members and several faculty members</em>. Each lecture begins at 6:00
+                    PM and lasts approximately two hours. One of the faculty members gives a short presentation which
+                    acts as a catalyst for conversation during dinner. The presentations are meant to confront us with
+                    relevant issues of <em>science, society, and culture</em>: in short, to foster a spirit of liberal
+                    culture here at MIT. Dinner is provided free of charge to all guests.</p>
+            </li>
+            <li id="upcominglecturesTab">
+                <h2>Upcoming Da Vinci Lectures</h2>
+                <!-- <p class='first text'>Stay tuned for our next lecture!</p> -->
+                <p class='first text'>Please let us know if you will be attending: <a
+                        href='http://tinyurl.com/MITingenious'>tinyurl.com/MITingenious</a></p>
+                <p class='first text'><img src='davinciposters/jasonfagone.png'/></p>
+            </li>
+            <li id="pastlecturesTab">
+                <h2>Past Da Vinci Lectures</h2>
+                <!-- Each file is a separate table which represents a semester.
+                     Semesters are listed in reverse chronological order;
+                     Lectures for each semester are listed in chronological order.
+                     To add a lecture, follow the instructions in template.htm -->
+
+                <!--#include virtual="includes/davincilectures/fall2013lectures.htm"-->
+                <!--#include virtual="includes/davincilectures/spring2013lectures.htm"-->
+                <!--#include virtual="includes/davincilectures/fall2012lectures.htm"-->
+                <!--#include virtual="includes/davincilectures/spring2012lectures.htm"-->
+                <!--#include virtual="includes/davincilectures/spring2011lectures.htm"-->
+            </li>
+        </ul>
     </div>
-  </div>
+</div>
 
 <!--#include virtual="includes/footer.htm"-->
 

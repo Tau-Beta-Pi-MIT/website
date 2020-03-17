@@ -2,10 +2,10 @@
 <!--#include virtual="includes/nav.htm"-->
 
   <!-- FELLOWSHIPS -->
-  <div class='main'>
-    <div class='row'>
-      <h1 class='dark-header'><em>FELLOWSHIPS</em></h1>
-    </div>
+<div class='main'>
+  <div class='row'>
+    <h1 class='dark-header'><em>FELLOWSHIPS</em></h1>
+  </div>
     <div class='row content'>
       <dl class="tabs">
         <dd class="active"><a href="#serviceengineering">General Information</a></dd>
