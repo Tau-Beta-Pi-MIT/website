@@ -6,17 +6,26 @@
     <div class='row'>
         <h1 class='dark-header'><em>TUTORING</em></h1>
     </div>
-    <div class='row'>
-        <p class='first text'>
-            We strive to provide a supportive academic environment in which students can help each other grow and
-            succeed, and tutoring is another outlet through which we pursue this vision. Our tutoring program matches
-            tutees with tutors based off of their academic experience, and is available free of charge for any course
-            for all undergraduate students.
-        </p>
-        <p>
-            If you have any questions about our tutoring program or would like to set up tutoring opportunities, please
-            reach out to us at <a href='mailto:tbp-officers@mit.edu'>tbp-officers@mit.edu</a>.
-        </p>
+    <div class='row content'>
+        <ul class="tabs-content">
+            <li class="active" id="tab1Tab">
+                <h2>Paying Forward Our Academic Opportunities</h2>
+                <p class='first text'>
+                    We strive to provide a supportive academic environment in which students can help each other grow
+                    and
+                    succeed, and tutoring is another outlet through which we pursue this vision. Our tutoring program
+                    matches
+                    tutees with tutors based off of their academic experience, and is available free of charge for any
+                    course
+                    for all undergraduate students.
+                </p>
+                <p>
+                    If you have any questions about our tutoring program or would like to set up tutoring opportunities,
+                    please
+                    reach out to us at <a href='mailto:tbp-officers@mit.edu'>tbp-officers@mit.edu</a>.
+                </p>
+            </li>
+        </ul>
     </div>
 </div>
 

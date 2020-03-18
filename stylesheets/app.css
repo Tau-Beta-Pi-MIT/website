@@ -409,44 +409,46 @@ ul.tabs-content h4 {
 }
 
 #home {
-  background: url('../images/header-1.png') 0 0 no-repeat; min-height: 354px;
+  background: url('../images/header-11.png') 0 0 no-repeat; min-height: 650px;
   background-size: cover;
-  height: 354px;
+  height: 650px;
   margin: 0 auto;
   width: 100%;
   position: relative;
+  top: 0px;
+  bottom: 100px;
 }
 #alt-home-1 {
-  background: url('../images/header-2.png') 0 0 no-repeat; min-height: 354px;
+  background: url('../images/header-10.png') 0 0 no-repeat; min-height: 650px;
   background-size: cover;
-  height: 354px;
+  height: 650px;
   margin: 0 auto;
   width: 100%;
   position: absolute;
-  top: 0;
+  top: 0px;
 }
 #alt-home-2 {
-  background: url('../images/header-3.png') 0 0 no-repeat; min-height: 354px;
+  background: url('../images/header-8.png') 0 0 no-repeat; min-height: 650px;
   background-size: cover;
-  height: 354px;
+  height: 650px;
   margin: 0 auto;
   width: 100%;
   position: absolute;
   top: 0;
 }
 #alt-home-3 {
-  background: url('../images/header-4.png') 0 0 no-repeat; min-height: 354px;
+  background: url('../images/header-3.png') 0 0 no-repeat; min-height: 650px;
   background-size: cover;
-  height: 354px;
+  height: 650px;
   margin: 0 auto;
   width: 100%;
   position: absolute;
   top: 0;
 }
 #alt-home-4 {
-  background: url('../images/header-5.jpg') 0 55% no-repeat; min-height: 354px;
+  background: url('../images/header-5.png') 0 55% no-repeat; min-height: 650px;
   background-size: cover;
-  height: 354px;
+  height: 650px;
   margin: 0 auto;
   width: 100%;
   position: absolute;
