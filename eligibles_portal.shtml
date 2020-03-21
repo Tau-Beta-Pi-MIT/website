@@ -1,0 +1,31 @@
+<!--#include virtual="includes/header.htm"-->
+<!--#include virtual="includes/nav.htm"-->
+
+<!-- ELIGIBLES PORTAL -->
+<!-- Source: https://www.geeksforgeeks.org/html-responsive-modal-login-form/ -->
+<div class='main'>
+    <div class='row'>
+        <h1 class='dark-header'><em>ELIGIBLES PORTAL</em></h1>
+    </div>
+    <div class='row content'>
+        <ul class="tabs-content">
+            <li class="active" id="tab1Tab">
+                <h2>Eligibles Login Form</h2>
+                <p>For current eligible students, please enter your nine-digit MIT ID to login to view your completed
+                or in-progress eligibility requirements.</p>
+                <form action="eligibles_landing_page.shtml">
+                    <div class="container">
+                        <label><b>Student ID Number</b></label>
+                        <input type="text" placeholder="9 Digit MIT ID Number" name="uname" required>
+
+                        <button type="submit">Login</button>
+                        <input type="checkbox" checked="checked"> Remember me
+                    </div>
+                </form>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--#include virtual="includes/footer.htm"-->
+<!--#include virtual="includes/bottom.htm"-->
