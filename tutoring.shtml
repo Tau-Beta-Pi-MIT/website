@@ -1,6 +1,24 @@
 <!--#include virtual="includes/header.htm"-->
 <!--#include virtual="includes/nav.htm"-->
 
+<style>
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */
+.button5 {background-color: #555555;} /* Black */
+</style>
+
 <!-- TUTORING -->
 <div class='main'>
     <div class='row'>
@@ -18,6 +36,12 @@
                     tutees with tutors based off of their academic experience, and is available free of charge for any
                     course
                     for all undergraduate students.
+                </p>
+                <p>
+                    If you would like to set up tutoring with one of our tutors, please fill out the signup form below.
+                </p>
+                <p>
+                    <a href="https://forms.gle/M9sBgyBZgTnBNYoK7" class="button button5">Tutoring Signup</a>
                 </p>
                 <p>
                     If you have any questions about our tutoring program or would like to set up tutoring opportunities,
