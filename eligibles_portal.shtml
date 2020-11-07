@@ -11,17 +11,26 @@
         <ul class="tabs-content">
             <li class="active" id="tab1Tab">
                 <h2>Eligibles Login Form</h2>
-                <p>For current eligible students, please enter your nine-digit MIT ID to login to view your completed
-                or in-progress eligibility requirements.</p>
-                <form action="eligibles_landing_page.shtml">
-                    <div class="container">
-                        <label><b>Student ID Number</b></label>
-                        <input type="text" placeholder="9 Digit MIT ID Number" name="uname" required>
-
-                        <button type="submit">Login</button>
-                        <input type="checkbox" checked="checked"> Remember me
-                    </div>
+                <p>For current eligible students, please enter the password
+                    provided to access the eligibles portal.</p>
+                <form>
+                    <label for="pswd">Eligibles Password</label>
+                    <input type="password" id="pswd"
+                           placeholder="Eligibles Password">
+                    <input type="button" value="Login" onclick="checkPswd();"/>
                 </form>
+                <!--Function to check password the already set password is admin-->
+                <script type="text/javascript">
+                    function checkPswd() {
+                        var confirmPassword = "tbp_davinci";
+                        var password = document.getElementById("pswd").value;
+                        if (password == confirmPassword) {
+                            window.location = "eligibles_landing_page.shtml";
+                        } else {
+                            alert("Passwords do not match.");
+                        }
+                    }
+                </script>
             </li>
         </ul>
     </div>

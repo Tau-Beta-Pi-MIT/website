@@ -1,133 +1,150 @@
+<!doctype html>
+<html>
+<head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        var spData = null;
+
+        function doData(json) {
+            spData = json.feed.entry;
+        }
+
+        function drawCell(tr, val) {
+            var td = $("<td/>");
+            tr.append(td);
+            td.append(val);
+            return td;
+        }
+
+        function drawRow(table, rowData, kerberos, r) {
+            if (rowData == null) return null;
+            if (rowData.length == 0) return null;
+
+            if (rowData[3] == kerberos || rowData[3] == "Kerberos") {
+
+                var tr = $("<tr/>");
+                table.append(tr);
+
+                // Check if we have right kerberos
+                for (var c = 0; c < rowData.length; c++) {
+                    drawCell(tr, rowData[c]);
+                }
+                return tr;
+            }
+        }
+
+        function drawTable(parent) {
+            var table = $("<table/>");
+            parent.append(table);
+            return table;
+        }
+
+        function readData(parent) {
+            var data = spData;
+            var table = drawTable(parent);
+            var rowData = [];
+
+            // Enter kerberos
+            var kerberos = prompt("Please enter your kerberos", "Your Kerberos");
+
+            // Display kerberos
+            document.getElementById("kerbResults").innerHTML = "Hello, " + kerberos + ".";
+
+
+            for (var r = 0; r < data.length; r++) {
+                var cell = data[r]["gs$cell"];
+                var val = cell["$t"];
+                if (cell.col == 1) {
+                    drawRow(table, rowData, kerberos, r);
+                    rowData = [];
+                }
+                rowData.push(val);
+            }
+            drawRow(table, rowData);
+        }
+
+        $(document).ready(function () {
+            readData($("#data"));
+        });
+
+    </script>
+    <script src="https://spreadsheets.google.com/feeds/cells/1QlzGILSIMBLLrLDSnzHJre5iYb8-sqPiE81ul8D2AVY/1/public/values?alt=json-in-script&callback=doData"></script>
+
+    <style type="text/css">
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: thin solid black;
+            padding: 3px;
+        }
+
+        tr.head th, tr.head td {
+            background-color: #EDEDED;
+            border-bottom: 4px double black;
+        }
+
+        span.linetitle {
+            font-weight: bold;
+        }
+
+        div.lineclass {
+            font-style: italic;
+        }
+
+        .title, .result {
+            width: 80%;
+        }
+
+        .notes {
+            width: 15%;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        body {
+            margin: 12px;
+            font-size: 12px;
+        }
+    </style>
+    <style type="text/css" media="print">
+        form {
+            display: none;
+        }
+    </style>
+</head>
+<body>
 <!--#include virtual="includes/header.htm"-->
 <!--#include virtual="includes/nav.htm"-->
-
-<!-- ELIGIBLES LANDING PORTAL -->
-<!-- To check something: <input type="checkbox" checked="checked"><-->
-<!-- Sources: (1) https://stackoverflow.com/questions/155291/can-html-checkboxes-be-set-to-readonly,
-              (2) https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
--->
-<style>
-    /* The container */
-    .container {
-        display: block;
-        position: relative;
-        padding-left: 35px;
-        margin-bottom: 12px;
-        cursor: pointer;
-        font-size: 22px;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-    }
-
-    /* Hide the browser's default checkbox */
-    .container input {
-        position: absolute;
-        opacity: 0;
-        cursor: pointer;
-        height: 0;
-        width: 0;
-    }
-
-    /* Create a custom checkbox */
-    .checkmark {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 25px;
-        width: 25px;
-        background-color: #eee;
-    }
-
-    /* On mouse-over, add a grey background color */
-    .container:hover input ~ .checkmark {
-        background-color: #ccc;
-    }
-
-    /* When the checkbox is checked, add a blue background */
-    .container input:checked ~ .checkmark {
-        background-color: #2196F3;
-    }
-
-    /* Create the checkmark/indicator (hidden when not checked) */
-    .checkmark:after {
-        content: "";
-        position: absolute;
-        display: none;
-    }
-
-    /* Show the checkmark when checked */
-    .container input:checked ~ .checkmark:after {
-        display: block;
-    }
-
-    /* Style the checkmark/indicator */
-    .container .checkmark:after {
-        left: 9px;
-        top: 5px;
-        width: 5px;
-        height: 10px;
-        border: solid white;
-        border-width: 0 3px 3px 0;
-        -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        transform: rotate(45deg);
-    }
-</style>
+<div id="data"/>
 <div class='main'>
     <div class='row'>
         <h1 class='dark-header'><em>ELIGIBLES PORTAL</em></h1>
     </div>
+    <br>
     <div class='row content'>
         <ul class="tabs-content">
             <li class="active" id="tab1Tab">
-                <h2 class='dark-header'><em>Eligibility Requirements Checklist</em></h2>
-                <p>Here, you can view the status of your eligiblity requirements for becoming a member of TBP. Please
-                    note that it may be up to a week before your completed eligibility requirements show up here. If you
-                    have any questions, comments, or concerns about your requirements, please reach out to the eligibles
-                    chair(s) or your committee head(s). </p>
-                <label class="container">Committee Application
-                    <input type="checkbox" onclick="return false;"/>
-                    <span class="checkmark"></span>
-                </label>
-                <label class="container">Essay
-                    <input type="checkbox" onclick="return false;"/>
-                    <span class="checkmark"></span>
-                </label>
-                <label class="container">Recommendation Letter
-                    <input type="checkbox" onclick="return false;"/>
-                    <span class="checkmark"></span>
-                </label>
-                <label class="container">Dues
-                    <input type="checkbox" onclick="return false;"/>
-                    <span class="checkmark"></span>
-                </label>
-                <label class="container">Committee Requirement
-                    <input type="checkbox" onclick="return false;"/>
-                    <span class="checkmark"></span>
-                </label>
-                <label class="container">Social Event (1)
-                    <input type="checkbox" onclick="return false;"/>
-                    <span class="checkmark"></span>
-                </label>
-                <label class="container">Social Event (2)
-                    <input type="checkbox" onclick="return false;"/>
-                    <span class="checkmark"></span>
-                </label>
-                <label class="container">Community Service Event (TBP)
-                    <input type="checkbox" onclick="return false;"/>
-                    <span class="checkmark"></span>
-                </label>
-                <label class="container">Community Service Event (TBP or External)
-                    <input type="checkbox" onclick="return false;"/>
-                    <span class="checkmark"></span>
-                </label>
+                <h2 class='dark-header'><em>Eligibility Requirements
+                    Checklist</em></h2>
+                <br>
+                <p>Here, you can view the status of your eligibility
+                    requirements for becoming a member of TBP.  Please
+                    note that it may be up to a week before your completed
+                    eligibility requirements show up here, since our eligibles
+                    chairs and officers will need to enter your completed
+                    requirements manually. If you have any questions, comments,
+                    or concerns about your requirements, please reach out to the eligibles
+                    chair(s) at <em><a href='mailto:tbp-eligibles-chair@mit.edu'>tbp-eligibles-chair@mit.edu</a></em>. </p>
+                <br>
+                <h2 id="kerbResults"></h2>
             </li>
         </ul>
     </div>
 </div>
-
-
-<!--#include virtual="includes/footer.htm"-->
-<!--#include virtual="includes/bottom.htm"-->
+</body>
+</html>
