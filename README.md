@@ -49,6 +49,17 @@ CSS is also used throughout this codebase to format objects, text, and images.  
 ### Web Page Directories
 The contents of the website's home page are given by `index.shmtl`.  All other main navigation files (e.g. web pages) can be found in the same directory as `index.shmtl`.  Files used as components of a web page (e.g. `careerfair.shtml`) can be found in the `includes/pages/` directory.
 
+### Updating Our Elibigibles Portal
+To update our eligibles portal for the following initiation class, you can do so by:
+
+1. Make sure you are tracking requirements through google sheets.  In the eligibles portal, Go to **File** --> **Publish to the Web**.  Publish in any format.
+2. Make sure that the 4th header/column of the requirements spreadsheet is written exactly as "Kerberos" (without quotations).
+2. Now, go to **Share**, and find the ID for the google sheet, where the ID can be identified by pattern-matching with this link: `https://docs.google.com/spreadsheets/d/<ID>/edit?usp=sharing`.
+3. Next, navigate to `./eligibles_landing_page.shtml`, line 71, and change the ID of the `src` link such that it looks like:
+`https://spreadsheets.google.com/feeds/cells/<ID>/1/public/values?alt=json-in-script&callback=doData`.
+4. Test this out locally by starting a local server and querying one of the kerberos entries of the new database.  If the kerberos is in the database, you should see two rows appear.
+5. Push to GitHub and pull from Athena using the process below.  That's it!
+
 ## Suggested workflow for making changes ([feature/branch workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow)):
 1. Create a branch on the GitHub repository for the feature you’d like to add (e.g. a button for logging tutoring hours):
 
