@@ -59,6 +59,7 @@ To update our eligibles portal for the following initiation class, you can do so
 `https://spreadsheets.google.com/feeds/cells/<ID>/1/public/values?alt=json-in-script&callback=doData`.
 4. Test this out locally by starting a local server and querying one of the kerberos entries of the new database.  If the kerberos is in the database, you should see two rows appear.
 5. Push to GitHub and pull from Athena using the process below.  That's it!
+6. **NOTE**: The password for the eligibles portal is `tbp_davinci`.  You can change this on line 25 of `./eligibles_portal.shtml`.
 
 ## Suggested workflow for making changes ([feature/branch workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow)):
 1. Create a branch on the GitHub repository for the feature you’d like to add (e.g. a button for logging tutoring hours):
