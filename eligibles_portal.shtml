@@ -19,7 +19,7 @@
                            placeholder="Eligibles Password">
                     <input type="button" value="Login" onclick="checkPswd();"/>
                 </form>
-                <!--Function to check password the already set password is admin-->
+                <!--Function to check password the already set password is tbpdavinci-->
                 <script type="text/javascript">
                     function checkPswd() {
                         var confirmPassword = "tbp_davinci";
