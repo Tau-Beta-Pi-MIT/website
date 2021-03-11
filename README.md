@@ -1,4 +1,5 @@
 # MIT Athena Locker-hosted Website
+Want to see these guides each on their own page?  Please check out our [wiki](https://github.com/Tau-Beta-Pi-MIT/website/wiki)!
 
 ## Overview
 This repository contains HTML, CSS, and JavaScript code along with images for our website, hosted [here](tbp.mit.edu/www).  This code can be edited and pushed to our Athena server by individuals with appropriate credentials.  
@@ -49,8 +50,16 @@ CSS is also used throughout this codebase to format objects, text, and images.  
 ### Web Page Directories
 The contents of the website's home page are given by `index.shmtl`.  All other main navigation files (e.g. web pages) can be found in the same directory as `index.shmtl`.  Files used as components of a web page (e.g. `careerfair.shtml`) can be found in the `includes/pages/` directory.
 
-### Updating Our Elibigibles Portal
-To update our eligibles portal for the following initiation class, you can do so by:
+## Updating Our Elibigibles Portal
+To update our eligibles portal for the new initiation class, please first make sure the following conditions are met:
+
+1. Eligibility requirements are kept in a publishable google sheet that has the **exact** same format as [this example google sheet](https://docs.google.com/spreadsheets/d/1QTJir8L7kylD65rg0VoDer1m0lLwqVBFXcu7hB9SWzE/edit?usp=sharing).  You can also change the format, but you may need to change the `eligibles_landing_page.shtml` if you do.
+
+2. Make sure you use checkboxes to denote if a requirement is completed.
+
+3. Finally, please make sure that data validation for checkboxes is correct on the Google sheet page that captures all of these requirements.  To do this, select all checkboxes, right click, and select "Data Validation".  Please make sure the "Checked" and "Unchecked" fields correspond to "Complete" and "Incomplete", respectively, as these will be what's displayed for the eligibles in the eligibles portal.
+
+Once these steps are complete, please complete the following instructions:
 
 1. Make sure you are tracking requirements through google sheets.  In the eligibles portal, Go to **File** --> **Publish to the Web**.  Publish in any format.
 2. Make sure that the 4th header/column of the requirements spreadsheet is written exactly as "Kerberos" (without quotations).
