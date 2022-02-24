@@ -19,11 +19,11 @@
           <!-- BLURB IN p tags -->
           <h2>TBP Service and Engineering Fellowships</h2>
           <p class='first text'>
-          TBP will sponsor students wishing to pursue a service engineering project during Summer 2021. Successful fellows should be prepared to guide a student-led project that to applies their engineering and technological understanding to better society, both domestic and abroad, and can leave behind lasting, sustainable benefits for a community. The work may be arranged with non-governmental or intergovernmental organizations and other community-conscious groups. Students of all disciplines are welcome.</p>
-        <h5><a href='#application' target='new'>Apply now</a> for the 2021 Summer Fellowship</h5>
+          TBP will sponsor students wishing to pursue a service engineering project during Summer 2022. Successful fellows should be prepared to guide a student-led project that to applies their engineering and technological understanding to better society, both domestic and abroad, and can leave behind lasting, sustainable benefits for a community. The work may be arranged with non-governmental or intergovernmental organizations and other community-conscious groups. Students of all disciplines are welcome.</p>
+        <h5><a href='#application' target='new'>Apply now</a> for the 2022 Summer Fellowship</h5>
         <!-- <h5>Applications for the Summer 2017 Service and Engineering Fellowships are now closed. View the winners <a href='#pastwinners'>here</a></h5> -->
           <p class='text'>
-            This summer, we intend to award up to $10,000 across any number of fellowships. The application package is due on Sunday, May 2 at midnight EST.</em> for priority decisions. Applications received before <em>Sunday, May 2 at midnight EST</em> will be reviewed on a rolling basis.
+            This summer, we intend to award up to $10,000 across any number of fellowships. The application package is due on Thursday, March 10 at midnight EST.</em> for priority decisions.
           <p class='text'>
             For further information, please contact <a href='mailto:tbp-fellowships@mit.edu'>tbp-fellowships@mit.edu</a>
           </p>
@@ -32,19 +32,19 @@
           <!-- <a href='includes/fellowships/ServiceEngineeringSummer2013.pdf' target='new' class='button normal download'>Download Application<span class='right-arrow'></span></a> -->
         </li>
         <li id="applicationTab">
-          <h2>Service/Engineering Summer 2021 Fellowship Application</h2>
+          <h2>Service/Engineering Summer 2022 Fellowship Application</h2>
           <p class='first text'>
             TBP is looking to sponsor students wishing to pursue a service engineering project this coming Summer.
-            The purpose of this program is to support students who seek to apply their engineering and technological 
-            understanding to better society, both domestic and abroad. Successful fellows should be prepared to guide a 
-            student-led project that can leave behind lasting, sustainable benefits for a community. The work may be 
-            arranged with non-governmental or inter-governmental organizations and other community-conscious groups. 
+            The purpose of this program is to support students who seek to apply their engineering and technological
+            understanding to better society, both domestic and abroad. Successful fellows should be prepared to guide a
+            student-led project that can leave behind lasting, sustainable benefits for a community. The work may be
+            arranged with non-governmental or inter-governmental organizations and other community-conscious groups.
             Students of all disciplines are welcome.</p>
           <h3>Application Checklist</h3>
           <!-- <p>Applications for these fellowships are now closed.</p>  -->
-            <p>The TBP Fellowship application has several components. To be considered, please make sure that all of the following are complete. The application package is due on <em>Sunday, May 2 at midnight EST</em> for priority decisions. Applications received before <em>Sunday, May 2 at midnight EST</em> will be reviewed on a rolling basis.</p>
+            <p>The TBP Fellowship application has several components. To be considered, please make sure that all of the following are complete. The application package is due on <em>Thursday, March 10 at midnight EST</em>.
             <ul>
-              <li>Complete the online form <a href='https://forms.gle/FnTtYh97KuFecd9MA'>here</a> (See Abstract and Safety Statement Guidelines below)</li>
+              <li>Complete the online form <a href='https://docs.google.com/forms/d/e/1FAIpQLSeXqgCVqL8R3DlnBykLfqhPVvC2IZ0Z-5fd_2GdTz6kPXeZxg/viewform'>here</a> (See Abstract and Safety Statement Guidelines below)</li>
               <li>Please submit the following to <a href='https://www.dropbox.com/request/ioWGGjwQfgWPkmn9vuGj'>this Dropbox Link</a></li>
               <ul>
                 <li>Project proposal: See Proposal Guidelines below.</li>
@@ -58,7 +58,7 @@
 
           <h3>Abstract Guidelines</h3>
             <p>Provide a clear and concise description of your project and objectives. Avoid jargon and include information such as the project location, community partner and team members, if applicable. (Maximum: 200 words)</p>
-         
+
           <h3>Safety Statement Guidelines</h3>
             <p>Outline your safety considerations for the project. What are the main safety issues in the location you will be working in? What steps will you take to prioritize your safety and what resources have you identified to help you stay safe? Does your project have any safety implications for the community you are serving and how will you address these?</p>
             <p>This may include but is not limited to: travel, transportation, disease, environment and surroundings, limited communication, safety implications of the project for the community or simply working in an unfamiliar location. Even if the area you are working in is not under a travel warning, please outline how you will take personal and/or team safety into account in your day-to-day work. (Maximum: 250 words)</p>
@@ -70,7 +70,7 @@
             <ul>
               <li>Project Title
               <li>Name(s) of Applicants</li>
-              <li>Term (i.e. Summer 2021)</li>
+              <li>Term (i.e. Summer 2022)</li>
             </ul>
 
             <h4>Project Abstract</h4>
@@ -110,7 +110,7 @@
           <h3>Requirements</h3>
             <p>Should your application be successful and you are awarded a fellowship, you will be notified by email and set up with the Student Activities Office for travel and financial matters. The TBP Service &amp; Engineering Fellowship Program also has the following requirements:</p>
             <ul>
-              <li>All aspects of the project requiring funding must be completed by the end of Summer 2021.</li>
+              <li>All aspects of the project requiring funding must be completed by the end of Summer 2022.</li>
               <li>Each fellow must submit a slideshow that includes the major results of his/her work and multiple pictures of the project upon completion.</li>
               <li>Each fellow must be prepared to present his/her accomplishments at the Tau Beta Pi Fellowship Forum (at MIT, date to be announced).</li>
               <li>Relevant receipts/proofs of payment totaling the awarded sum must be submitted within 2 weeks of project completion.</li>
@@ -132,7 +132,7 @@
         <li id="pastwinnersTab">
           <!-- LIST OF PAST WINNERS -->
           <h2>Past Winners</h2>
-          <!--#include virtual="includes/fellowships/winners/2014SummerEngineering.htm"--> 
+          <!--#include virtual="includes/fellowships/winners/2014SummerEngineering.htm"-->
           <!--#include virtual="includes/fellowships/winners/2014IAP.htm"-->
           <!--#include virtual="includes/fellowships/winners/2013SummerEngineering.htm"-->
           <!--#include virtual="includes/fellowships/winners/2013SpringPhilanthropic.htm"-->
